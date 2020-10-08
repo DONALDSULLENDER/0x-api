@@ -35,16 +35,6 @@
     lodash "^4.17.11"
     valid-url "^1.0.9"
 
-"@0x/assert@^3.0.6":
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/@0x/assert/-/assert-3.0.7.tgz#fb616533ed00480bd642f8419d28e88b547c30df"
-  dependencies:
-    "@0x/json-schemas" "^5.0.7"
-    "@0x/typescript-typings" "^5.0.2"
-    "@0x/utils" "^5.4.1"
-    lodash "^4.17.11"
-    valid-url "^1.0.9"
-
 "@0x/asset-swapper@0xProject/gitpkg-registry#0x-asset-swapper-v4.7.0-c246d9809":
   version "4.7.0"
   resolved "https://codeload.github.com/0xProject/gitpkg-registry/tar.gz/9611f87e73985fdf056b0db98deb99de9e767d9f"
@@ -463,19 +453,6 @@
     uuid "^3.3.2"
     websocket "^1.0.29"
 
-"@0x/mesh-rpc-client@^9.3.0":
-  version "9.4.2"
-  resolved "https://registry.yarnpkg.com/@0x/mesh-rpc-client/-/mesh-rpc-client-9.4.2.tgz#6f9690fb1cb37fb0c2fd3907241af0e543c78451"
-  integrity sha512-WsimLObhVZxG/Zbwm0hweLXdQ/D8tbzGFbzEX9o3UbnqRJG/3sGtXM4es8lD0sTkc/EPO3SB0jBegSV4cE/2aw==
-  dependencies:
-    "@0x/assert" "^3.0.6"
-    "@0x/types" "^3.1.2"
-    "@0x/typescript-typings" "^5.0.2"
-    "@0x/utils" "^5.4.0"
-    uuid "^3.3.2"
-    web3-providers "^2.0.0-alpha.1"
-    websocket "^1.0.29"
-
 "@0x/migrations@^6.2.4":
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/@0x/migrations/-/migrations-6.4.0.tgz#6cef944828db5aa3d179014a82faca4a2fb3b11c"
@@ -742,7 +719,7 @@
     bignumber.js "~9.0.0"
     ethereum-types "^2.2.0-beta.2"
 
-"@0x/types@^3.1.2", "@0x/types@^3.2.0":
+"@0x/types@^3.2.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@0x/types/-/types-3.2.0.tgz#490627e9440c3ff4e4660b0c10960ccd02d7105f"
   integrity sha512-HcYXmz7gYtibJmZQjrQCnzV2FjRoo5b/Ul1QoTeQFAZ2M2ggt1wHspQ7vOkEAZEK/7TE4TKA4MlRwRLa4isL1Q==
@@ -771,7 +748,7 @@
     ethereum-types "^2.2.0-beta.2"
     popper.js "1.14.3"
 
-"@0x/typescript-typings@^5.0.1", "@0x/typescript-typings@^5.0.2", "@0x/typescript-typings@^5.1.1":
+"@0x/typescript-typings@^5.0.1", "@0x/typescript-typings@^5.1.1":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@0x/typescript-typings/-/typescript-typings-5.1.1.tgz#e5216f33e5859d48cd441a059da9c56c2b6df36a"
   integrity sha512-a8/uKPNStHORFQzI/DDEq4ixb4IricPogAJ3P17YnNYr/yF3HwXEu6+cFxs4qi1fr0zGoPe7D3XtqtR+dX/ajQ==
@@ -4871,11 +4848,6 @@ eventemitter3@4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.4.tgz#b5463ace635a083d018bdc7c917b4c5f10a85384"
   integrity sha512-rlaVLnVxtxvoyLsQQFBx53YmXHDxRIzzTLbdfxqi4yocpSjAxXwkU0cScM5JgSKMqEhrZpnvQ2D9gjylR0AimQ==
-
-eventemitter3@^4.0.0:
-  version "4.0.7"
-  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
-  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
 
 events@^3.0.0:
   version "3.2.0"
@@ -10593,17 +10565,6 @@ web3-core-helpers@2.0.0-alpha:
     web3-eth-iban "2.0.0-alpha"
     web3-utils "2.0.0-alpha"
 
-web3-core-helpers@2.0.0-alpha.1:
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/web3-core-helpers/-/web3-core-helpers-2.0.0-alpha.1.tgz#d20db557fe8740578105fb6b5790eb22097d1974"
-  integrity sha512-YUDECwESRI2Bw3ijEaGGkYhEAyqQF17KFtul9Y6OZLtYx6W7bJCMKbSFigLl99F3zFLZ8E/dwzCizSrD+DuWIQ==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    lodash "^4.17.11"
-    web3-core "2.0.0-alpha.1"
-    web3-eth-iban "2.0.0-alpha.1"
-    web3-utils "2.0.0-alpha.1"
-
 web3-core-method@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/web3-core-method/-/web3-core-method-1.2.1.tgz#9df1bafa2cd8be9d9937e01c6a47fc768d15d90a"
@@ -10652,20 +10613,6 @@ web3-core-method@2.0.0-alpha:
     web3-core-helpers "2.0.0-alpha"
     web3-core-subscriptions "2.0.0-alpha"
     web3-utils "2.0.0-alpha"
-
-web3-core-method@2.0.0-alpha.1:
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/web3-core-method/-/web3-core-method-2.0.0-alpha.1.tgz#6fd59cd229550bd08cb8922c095870fc9bf35f66"
-  integrity sha512-RlKYn9spgKAbIU9IV5UCQBLAcblLf5O6LYCGacRk0Iyz2SE0bVMtd7CY1pcsIXegNFiT3CPk+XvcpOIehZBhVQ==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    eventemitter3 "3.1.0"
-    lodash "^4.17.11"
-    rxjs "^6.4.0"
-    web3-core "2.0.0-alpha.1"
-    web3-core-helpers "2.0.0-alpha.1"
-    web3-core-subscriptions "2.0.0-alpha.1"
-    web3-utils "2.0.0-alpha.1"
 
 web3-core-promievent@1.2.1:
   version "1.2.1"
@@ -10758,15 +10705,6 @@ web3-core-subscriptions@2.0.0-alpha:
     eventemitter3 "^3.1.0"
     lodash "^4.17.11"
 
-web3-core-subscriptions@2.0.0-alpha.1:
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/web3-core-subscriptions/-/web3-core-subscriptions-2.0.0-alpha.1.tgz#5c2164ce8649645f6809dcdc34626ae12ec0d19b"
-  integrity sha512-fOr5DCz1QjwBPf/ssJ49Q0LVi5PUOkHmJ1y+5aSSJZmcuAZ9h1FJp7ANqAI7p7ssXnm9RpCDMg5vGa8tyYyAXA==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    eventemitter3 "^4.0.0"
-    lodash "^4.17.11"
-
 web3-core@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/web3-core/-/web3-core-1.2.1.tgz#7278b58fb6495065e73a77efbbce781a7fddf1a9"
@@ -10815,19 +10753,6 @@ web3-core@2.0.0-alpha:
     web3-core-method "2.0.0-alpha"
     web3-providers "2.0.0-alpha"
     web3-utils "2.0.0-alpha"
-
-web3-core@2.0.0-alpha.1:
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/web3-core/-/web3-core-2.0.0-alpha.1.tgz#4bb87b860a0bbf9fd19ae380a4773e12ac3b3010"
-  integrity sha512-7fBl1h9Z46q0n8ugjYWMZsBP1tLlt8Rp4dRDF11EUNFQo1ll60tHj9PdjQIcKqoTd9EKhjYeZUWIsLf7YuipqA==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    "@types/bn.js" "^4.11.4"
-    "@types/node" "^12.6.1"
-    lodash "^4.17.11"
-    web3-core-method "2.0.0-alpha.1"
-    web3-providers "2.0.0-alpha.1"
-    web3-utils "2.0.0-alpha.1"
 
 web3-eth-abi@1.2.1:
   version "1.2.1"
@@ -11027,15 +10952,6 @@ web3-eth-iban@2.0.0-alpha:
     "@babel/runtime" "^7.3.1"
     bn.js "4.11.8"
     web3-utils "2.0.0-alpha"
-
-web3-eth-iban@2.0.0-alpha.1:
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/web3-eth-iban/-/web3-eth-iban-2.0.0-alpha.1.tgz#79f1f6061b95b5bb64eb4243a6c65dadf542077c"
-  integrity sha512-I9oD+kjiF/RPYslndfr4UlhU/zdP67+LYG5dMx6zEM+KUmHdwQeMTp4w3NVZny7/pOtXA1w6dJJ2tL/OVfGkkw==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    bn.js "4.11.8"
-    web3-utils "2.0.0-alpha.1"
 
 web3-eth-personal@1.2.1:
   version "1.2.1"
@@ -11306,23 +11222,6 @@ web3-providers@2.0.0-alpha:
     websocket "^1.0.28"
     xhr2-cookies "1.1.0"
 
-web3-providers@2.0.0-alpha.1, web3-providers@^2.0.0-alpha.1:
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/web3-providers/-/web3-providers-2.0.0-alpha.1.tgz#19486aed4b014ec5d7687fac4eef2042db8b338c"
-  integrity sha512-X7hDkLKVN1U5aWeNQeErev494VSgt4gHJpHTgXn2rxrdJYUf7+6e6Al7yvRHlDxoTzhycX+j11HQC+CZlA+uhQ==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    "@types/node" "^10.12.18"
-    eventemitter3 "3.1.0"
-    lodash "^4.17.11"
-    url-parse "1.4.4"
-    web3-core "2.0.0-alpha.1"
-    web3-core-helpers "2.0.0-alpha.1"
-    web3-core-method "2.0.0-alpha.1"
-    web3-utils "2.0.0-alpha.1"
-    websocket "github:web3-js/WebSocket-Node#polyfill/globalThis"
-    xhr2-cookies "1.1.0"
-
 web3-shh@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/web3-shh/-/web3-shh-1.2.1.tgz#4460e3c1e07faf73ddec24ccd00da46f89152b0c"
@@ -11405,22 +11304,6 @@ web3-utils@2.0.0-alpha:
   version "2.0.0-alpha"
   resolved "https://registry.yarnpkg.com/web3-utils/-/web3-utils-2.0.0-alpha.tgz#2e8b91f4887380672a270f8045826d72b58c12a4"
   integrity sha512-EXPxfLdezx9nyt3dO0O0a8Er1sOvVW+lELcwoBWa+A3HwGLyc09Re0Fer+yW/NUp9UGJ9pp45bHkYAZul8tWHw==
-  dependencies:
-    "@babel/runtime" "^7.3.1"
-    "@types/bn.js" "^4.11.4"
-    "@types/node" "^12.6.1"
-    bn.js "4.11.8"
-    eth-lib "0.2.8"
-    ethjs-unit "^0.1.6"
-    lodash "^4.17.11"
-    number-to-bn "1.7.0"
-    randombytes "^2.1.0"
-    utf8 "2.1.1"
-
-web3-utils@2.0.0-alpha.1:
-  version "2.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/web3-utils/-/web3-utils-2.0.0-alpha.1.tgz#231442adea3b58bca0c7185ee5b7743c01938682"
-  integrity sha512-xZY9rPC/5S2utQV26x2oeWlBjs1cGwO+AAwv0smK2zjNi6UeTZjG9aZ/RJZJpToIapKhdtmQI6yZ8/ZQNDRGGg==
   dependencies:
     "@babel/runtime" "^7.3.1"
     "@types/bn.js" "^4.11.4"
