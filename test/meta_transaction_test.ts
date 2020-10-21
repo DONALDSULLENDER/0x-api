@@ -37,7 +37,7 @@ describe(SUITE_NAME, () => {
     let weth: WETH9Contract;
     let zrx: DummyERC20TokenContract;
 
-    before(async () => {
+    beforeEach(async () => {
         await setupApiAsync(SUITE_NAME);
 
         // connect to ganache and run contract migrations
@@ -63,7 +63,7 @@ describe(SUITE_NAME, () => {
         zrx = new DummyERC20TokenContract(contractAddresses.zrxToken, provider);
     });
 
-    after(async () => {
+    afterEach(async () => {
         await teardownApiAsync(SUITE_NAME);
     });
 
