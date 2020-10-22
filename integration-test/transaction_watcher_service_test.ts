@@ -1,7 +1,7 @@
 import { expect } from '@0x/contracts-test-utils';
 import { Web3ProviderEngine } from '@0x/dev-utils';
 import { RPCSubprovider, SupportedProvider } from '@0x/subproviders';
-import { providerUtils } from '@0x/utils';
+import { logUtils, providerUtils } from '@0x/utils';
 import 'mocha';
 import * as request from 'supertest';
 import { Connection, Repository } from 'typeorm';
@@ -26,6 +26,7 @@ import { META_TRANSACTION_PATH, SRA_PATH } from '../src/constants';
 import { getDBConnectionAsync } from '../src/db_connection';
 import { TransactionEntity } from '../src/entities';
 import { GeneralErrorCodes } from '../src/errors';
+import { RfqtFirmQuoteValidator } from '../src/rfqt_firm_quote_validator';
 import { MetricsService } from '../src/services/metrics_service';
 import { OrderBookService } from '../src/services/orderbook_service';
 import { StakingDataService } from '../src/services/staking_data_service';
@@ -87,9 +88,10 @@ describe('transaction watcher service', () => {
         txWatcher = new TransactionWatcherSignerService(connection, txWatcherConfig);
         await txWatcher.syncTransactionStatusAsync();
         const orderBookService = new OrderBookService(connection);
+        const rfqtFirmQuoteValidator = new RfqtFirmQuoteValidator(connection, logUtils.warn);
         const stakingDataService = new StakingDataService(connection);
         const websocketOpts = { path: SRA_PATH };
-        const swapService = createSwapServiceFromOrderBookService(orderBookService, provider, contractAddresses);
+        const swapService = createSwapServiceFromOrderBookService(orderBookService, rfqtFirmQuoteValidator, provider, contractAddresses);
         const metaTransactionService = createMetaTxnServiceFromSwapService(
             provider,
             connection,

@@ -41,6 +41,7 @@ import {
 } from '../constants';
 import { InsufficientFundsError, ValidationError, ValidationErrorCodes } from '../errors';
 import { logger } from '../logger';
+import { RfqtFirmQuoteValidator } from '../rfqt_firm_quote_validator';
 import { TokenMetadatasForChains } from '../token_metadatas_for_networks';
 import {
     BucketedPriceDepth,
@@ -68,7 +69,12 @@ export class SwapService {
     // when the result has expired
     private readonly _tokenDecimalResultCache: ResultCache<number>;
 
-    constructor(orderbook: Orderbook, provider: SupportedProvider, contractAddresses: ContractAddresses) {
+    constructor(
+        orderbook: Orderbook,
+        provider: SupportedProvider,
+        contractAddresses: ContractAddresses,
+        rfqtFirmQuoteValidator?: RfqtFirmQuoteValidator,
+    ) {
         this._provider = provider;
         const swapQuoterOpts: Partial<SwapQuoterOpts> = {
             ...SWAP_QUOTER_OPTS,
@@ -76,6 +82,7 @@ export class SwapService {
                 ...SWAP_QUOTER_OPTS.rfqt!,
                 warningLogger: logger.warn.bind(logger),
                 infoLogger: logger.info.bind(logger),
+                firmQuoteValidator: rfqtFirmQuoteValidator,
             },
             contractAddresses,
         };
