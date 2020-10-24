@@ -89,6 +89,7 @@
         "@0x/contracts-test-utils": "^5.3.2",
         "@0x/dev-utils": "^3.2.1",
         "@0x/migrations": "^6.2.4",
+        "@0x/quote-server": "^3.1.0",
         "@0x/tslint-config": "^4.0.0",
         "@0x/typescript-typings": "^5.0.1",
         "@balancer-labs/sor": "^0.3.0",
@@ -127,7 +128,7 @@
     },
     "dependencies": {
         "@0x/assert": "^3.0.4",
-        "@0x/asset-swapper": "0xProject/gitpkg-registry#0x-asset-swapper-v4.7.1-8de0282d9",
+        "@0x/asset-swapper": "0xProject/gitpkg-registry#0x-asset-swapper-v4.7.1-e803da247",
         "@0x/base-contract": "^6.2.3",
         "@0x/connect": "^6.0.4",
         "@0x/contract-addresses": "0xProject/gitpkg-registry#0x-contract-addresses-v4.11.0-3aaa0ad6b",
